@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nunusai - Language Learning Made Easy</title>
+    <meta name="description" content="Nunusai is an English learning app designed for seniors and older adults. Help your parents and grandparents speak English easily, even with zero foundation!">
+    <meta name="keywords" content="English learning for seniors,English app for elderly,Senior English learning,English for older adults,English speaking for seniors,English pronunciation for seniors,Language learning for seniors,English learning app for seniors,English for grandparents,Beginner English for seniors">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23fff" opacity="0.1"/></svg>') repeat;
+            opacity: 0.1;
+        }
+        .nunu-character {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .nunu-character::after {
+            content: '👶';
+            font-size: 60px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+            justify-content: center;
+        }
+        .feature-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #007AFF, #00C6FF);
+        }
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #007AFF, #00C6FF);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,122,255,0.3);
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        .language-switch {
+            text-align: right;
+            padding: 10px;
+        }
+        .language-switch a {
+            margin-left: 10px;
+            color: #666;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+        }
+        .language-switch a:hover {
+            background: #f0f0f0;
+        }
+        .bubble {
+            background: #fff;
+            padding: 15px 25px;
+            border-radius: 20px;
+            position: relative;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            border-width: 10px 10px 0;
+            border-style: solid;
+            border-color: #fff transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switch">
+        <a href="/zh/">中文</a>
+        <a href="/ko/">한국어</a>
+    </div>
+    <div class="container">
+        <header class="header" style="background: linear-gradient(135deg, #f4faff 0%, #eaf3fb 100%);">
+            <div style="display: flex; align-items: center; justify-content: flex-start; max-width: 600px; margin: 0 auto 20px auto;">
+                <div class="nunu-character" style="margin: 0 20px 0 0; background: #fff; border: 3px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);"></div>
+                <div class="bubble" style="margin: 0; font-size: 1.1em; line-height: 1.8; background: #fff; color: #222; border: 1.5px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);">
+                    Hi! I'm nunu, let me help you learn languages easily!
+                </div>
+            </div>
+            <h1 style="margin-top: 10px;">Nunusai</h1>
+            <p>Making Language Learning Simple and Fun</p>
+        </header>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📸</div>
+                <h2>Object Recognition</h2>
+                <p>See something you don't know? No worries! Let nunu take a photo and instantly learn its English name! It's like having a little translator in your pocket! 😊</p>
+                <ul>
+                    <li>✨ Snap and learn instantly</li>
+                    <li>🎯 Clear pronunciation guides</li>
+                    <li>📱 Works offline, anywhere, anytime</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎤</div>
+                <h2>Face-to-Face Communication</h2>
+                <p>No more awkward conversations! nunu has prepared two super simple voice buttons - just speak and let the magic happen! It's like having a personal interpreter! 🌟</p>
+                <ul>
+                    <li>💫 Real-time translation, zero delay</li>
+                    <li>🌍 Multiple languages at your fingertips</li>
+                    <li>👆 One-tap operation, super easy</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <div class="bubble" style="display: inline-block;">
+                "Download now and let nunu be your language learning companion!"
+            </div>
+            <br>
+            <a href="#" class="cta-button">Coming in June, stay tuned!</a>
+        </div>
+    </div>
+</body>
+</html> 

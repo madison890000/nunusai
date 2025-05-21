@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语来语好 - 让语言学习更简单</title>
+    <meta name="description" content="语来语好，专为中老年人设计的英语学习APP，帮助爸妈、爷爷奶奶轻松开口说英语，零基础也能学会！">
+    <meta name="keywords" content="老年人学英语,中老年英语学习,爸妈学外语,银发族学英语,老年人英语口语,老年人英语发音,老年人英语助手,老年人英语app,老年人学外语方法,老年人零基础英语">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #f4faff 0%, #eaf3fb 100%);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23fff" opacity="0.1"/></svg>') repeat;
+            opacity: 0.1;
+        }
+        .nunu-character {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .nunu-character::after {
+            content: '👶';
+            font-size: 60px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+            justify-content: center;
+        }
+        .feature-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #007AFF, #00C6FF);
+        }
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #007AFF, #00C6FF);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,122,255,0.3);
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        .language-switch {
+            text-align: right;
+            padding: 10px;
+        }
+        .language-switch a {
+            margin-left: 10px;
+            color: #666;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+        }
+        .language-switch a:hover {
+            background: #f0f0f0;
+        }
+        .bubble {
+            background: #fff;
+            padding: 15px 25px;
+            border-radius: 20px;
+            position: relative;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            border-width: 10px 10px 0;
+            border-style: solid;
+            border-color: #fff transparent;
+        }
+        @keyframes nunu-bounce {
+            0% { transform: translateY(0) rotate(-5deg); }
+            50% { transform: translateY(-8px) rotate(5deg); }
+            100% { transform: translateY(0) rotate(-5deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switch">
+        <a href="/en/">English</a>
+        <a href="/ko/">한국어</a>
+    </div>
+    <div class="container">
+        <header class="header" style="background: linear-gradient(135deg, #f4faff 0%, #eaf3fb 100%);">
+            <div style="display: flex; align-items: center; justify-content: flex-start; max-width: 600px; margin: 0 auto 20px auto;">
+                <div class="nunu-character" style="margin: 0 20px 0 0; background: #fff; border: 3px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);"></div>
+                <div class="bubble" style="margin: 0; font-size: 1.1em; line-height: 1.8; background: #fff; color: #222; border: 1.5px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);">
+                    嗨！我是nunu，让我来帮你轻松学习语言吧！
+                </div>
+            </div>
+            <h1 style="margin-top: 10px;">语来语好</h1>
+            <p>让语言学习变得简单有趣</p>
+        </header>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📸</div>
+                <h2>拍照识物</h2>
+                <p>看到不认识的东西？别担心！让nunu帮你拍张照片，马上就能知道它的英文名字啦！就像有个小翻译官随时陪在你身边～</p>
+                <ul>
+                    <li>✨ 咔嚓一声，秒懂万物</li>
+                    <li>🎯 发音指导，清晰准确</li>
+                    <li>📱 离线使用，随时随地</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎤</div>
+                <h2>面对面交流</h2>
+                <p>和外国朋友聊天不再尴尬！nunu准备了两个超简单的语音按钮，说句话就能让对方听懂，就像有个小翻译官在帮你～</p>
+                <ul>
+                    <li>💫 实时翻译，零延迟</li>
+                    <li>🌍 多国语言，随心切换</li>
+                    <li>👆 一键操作，简单到爆</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <div class="bubble" style="display: inline-block;">
+                "快来下载吧！让nunu成为你的语言小助手～"
+            </div>
+            <br>
+            <a href="#" class="cta-button">6月上线，敬请期待！</a>
+        </div>
+    </div>
+</body>
+</html> 
