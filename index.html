@@ -4,34 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nunusai - Language Learning Made Easy</title>
-    <script>
-        // 简单的IP检测和重定向
-        window.onload = function() {
-            fetch('https://ipapi.co/json/')
-                .then(response => response.json())
-                .then(data => {
-                    const countryCode = data.country_code.toLowerCase();
-                    if (countryCode === 'cn' || countryCode === 'tw' || countryCode === 'hk') {
-                        window.location.href = '/zh/';
-                    } else if (countryCode === 'kr') {
-                        window.location.href = '/ko/';
-                    } else if (countryCode === 'jp') {
-                        window.location.href = '/ja/';
-                    } else {
-                        window.location.href = '/en/';
-                    }
-                })
-                .catch(() => {
-                    // 如果API调用失败，默认跳转到英文版
-                    window.location.href = '/en/';
-                });
-        }
-    </script>
+    <meta name="description" content="Nunusai is an English learning app designed for seniors and older adults. Help your parents and grandparents speak English easily, even with zero foundation!">
+    <meta name="keywords" content="English learning for seniors,English app for elderly,Senior English learning,English for older adults,English speaking for seniors,English pronunciation for seniors,Language learning for seniors,English learning app for seniors,English for grandparents,Beginner English for seniors,中老年英语学习,老年人英语,父母学英语,零基础英语,日语学習アプリ,高齢者英語,日本語翻訳,韓国語学習,시니어 영어 학습,노인 영어,부모님 영어,기초 영어,多语言翻译,语音翻译,拍照识物,シニア英語,シニア向け英語アプリ,한국어 번역,어르신 영어,シニア日本語,시니어 일본어">
 </head>
 <body>
     <div style="text-align: center; margin-top: 50px;">
-        <h1>Redirecting...</h1>
-        <p>Please wait while we redirect you to the appropriate language version.</p>
+        <h1>Welcome to Nunusai</h1>
+        <p>Please select your language:</p>
+        <a href="/zh/">中文</a> |
+        <a href="/en/">English</a> |
+        <a href="/ko/">한국어</a> |
+        <a href="/ja/">日本語</a>
+        <div style="max-width: 500px; margin: 40px auto 0 auto; background: #f7fbff; border-radius: 18px; box-shadow: 0 4px 18px rgba(0,122,255,0.08); padding: 32px 28px 28px 28px; text-align: left; border: 1.5px solid #e3eaf3;">
+            <div style="display: flex; align-items: center; margin-bottom: 18px;">
+                <span style="font-size: 2.5em; margin-right: 16px;">👵👴</span>
+                <span style="font-size: 1.25em; font-weight: 600; color: #007AFF;">Language Learning Made Easy for Seniors</span>
+            </div>
+            <p style="font-size: 1.08em; color: #222; margin-bottom: 18px;">Nunusai is a language learning assistant designed especially for seniors and older adults. With just a tap, you can:</p>
+            <ul style="font-size: 1.05em; color: #333; margin-bottom: 18px; padding-left: 1.2em;">
+                <li style="margin-bottom: 8px;">📸 Instantly recognize objects and learn their English names by taking a photo.</li>
+                <li style="margin-bottom: 8px;">🎤 Enjoy real-time voice translation for easy face-to-face communication.</li>
+                <li style="margin-bottom: 8px;">🔊 Get clear pronunciation guides and super simple operation, even for beginners.</li>
+            </ul>
+            <div style="background: #eaf6ff; border-radius: 12px; padding: 12px 18px; color: #007AFF; font-weight: 500; text-align: center;">Let Nunusai help your parents and grandparents speak English with confidence!</div>
+        </div>
     </div>
 </body>
 </html> 
