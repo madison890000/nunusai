@@ -6,6 +6,7 @@
     <title>语来语好 - 让语言学习更简单</title>
     <meta name="description" content="语来语好，专为中老年人设计的英语学习APP，帮助爸妈、爷爷奶奶轻松开口说英语，零基础也能学会！">
     <meta name="keywords" content="老年人学英语,中老年英语学习,爸妈学外语,银发族学英语,老年人英语口语,老年人英语发音,老年人英语助手,老年人英语app,老年人学外语方法,老年人零基础英语">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -43,17 +44,14 @@
             width: 120px;
             height: 120px;
             margin: 0 auto 20px;
-            background: #fff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             position: relative;
-        }
-        .nunu-character::after {
-            content: '👶';
-            font-size: 60px;
+            background-image: url('/logo.png');
+            background-size: contain;
         }
         .features {
             display: flex;
@@ -145,14 +143,10 @@
     </style>
 </head>
 <body>
-    <div class="language-switch">
-        <a href="/en/">English</a>
-        <a href="/ko/">한국어</a>
-    </div>
     <div class="container">
         <header class="header" style="background: linear-gradient(135deg, #f4faff 0%, #eaf3fb 100%);">
             <div style="display: flex; align-items: center; justify-content: flex-start; max-width: 600px; margin: 0 auto 20px auto;">
-                <div class="nunu-character" style="margin: 0 20px 0 0; background: #fff; border: 3px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);"></div>
+                <div class="nunu-character" style="margin: 0 20px 0 0; border: 3px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);"></div>
                 <div class="bubble" style="margin: 0; font-size: 1.1em; line-height: 1.8; background: #fff; color: #222; border: 1.5px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);">
                     嗨！我是nunu，让我来帮你轻松学习语言吧！
                 </div>

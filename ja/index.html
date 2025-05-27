@@ -6,6 +6,7 @@
     <title>Nunusai - シニアのための英語学習アプリ</title>
     <meta name="description" content="Nunusaiはシニア・高齢者向けの英語学習アプリです。お父さん・お母さん・おじいちゃん・おばあちゃんもゼロから英語を楽しく学べます！">
     <meta name="keywords" content="シニア英語学習,高齢者英語,シニア英語アプリ,お年寄り英語,シニア英会話,高齢者英語発音,シニア英語サポート,シニア英語初心者,親の英語学習,祖父母英語学習">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -13,6 +14,7 @@
             margin: 0;
             padding: 0;
             color: #333;
+            background: #f9f9f9;
         }
         .container {
             max-width: 1200px;
@@ -25,20 +27,129 @@
             background: linear-gradient(135deg, #f4faff 0%, #eaf3fb 100%);
             border-radius: 20px;
             margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23fff" opacity="0.1"/></svg>') repeat;
+            opacity: 0.1;
+        }
+        .nunu-character {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            background-image: url('/logo.png');
+            background-size: contain;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+            justify-content: center;
+        }
+        .feature-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #007AFF, #00C6FF);
+        }
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #007AFF, #00C6FF);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,122,255,0.3);
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        .language-switch {
+            text-align: right;
+            padding: 10px;
+        }
+        .language-switch a {
+            margin-left: 10px;
+            color: #666;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+        }
+        .language-switch a:hover {
+            background: #f0f0f0;
+        }
+        .bubble {
+            background: #fff;
+            padding: 15px 25px;
+            border-radius: 20px;
+            position: relative;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20px;
+            border-width: 10px 10px 0;
+            border-style: solid;
+            border-color: #fff transparent;
+        }
+        @keyframes nunu-bounce {
+            0% { transform: translateY(0) rotate(-5deg); }
+            50% { transform: translateY(-8px) rotate(5deg); }
+            100% { transform: translateY(0) rotate(-5deg); }
         }
     </style>
 </head>
 <body>
-    <div class="language-switch" style="text-align: right; padding: 10px;">
-        <a href="/zh/">中文</a>
-        <a href="/en/">English</a>
-        <a href="/ko/">한국어</a>
-    </div>
     <div class="container">
         <header class="header" style="background: linear-gradient(135deg, #f4faff 0%, #eaf3fb 100%);">
             <div style="display: flex; align-items: center; justify-content: flex-start; max-width: 600px; margin: 0 auto 20px auto;">
-                <div class="nunu-character" style="margin: 0 20px 0 0; background: #fff; border: 3px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10); width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 60px;">👶</div>
-                <div class="bubble" style="margin: 0; font-size: 1.1em; line-height: 1.8; background: #fff; color: #222; border: 1.5px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10); padding: 15px 25px; border-radius: 20px;">こんにちは！私はnunuです。英語学習を一緒に楽しく始めましょう！</div>
+                <div class="nunu-character" style="margin: 0 20px 0 0; border: 3px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);"></div>
+                <div class="bubble" style="margin: 0; font-size: 1.1em; line-height: 1.8; background: #fff; color: #222; border: 1.5px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10); padding: 15px 25px; border-radius: 20px;">こんにちは！私はnunuです。
+                    <br/>
+                    英語学習を一緒に楽しく始めましょう！</div>
             </div>
             <h1 style="margin-top: 10px;">Nunusai</h1>
             <p>シニアのための英語学習をもっと楽しく、もっと簡単に</p>

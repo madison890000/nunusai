@@ -6,6 +6,7 @@
     <title>Nunusai - 언어 학습을 쉽고 재미있게</title>
     <meta name="description" content="Nunusai는 시니어와 어르신을 위한 영어 학습 앱입니다. 부모님, 조부모님도 쉽게 영어를 시작할 수 있어요!">
     <meta name="keywords" content="시니어 영어 학습,노인 영어 배우기,어르신 영어 앱,시니어 영어 회화,노년층 영어 공부,부모님 영어 배우기,시니어 영어 발음,시니어 영어 학습 앱,노인 외국어 학습,시니어 기초 영어">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -43,17 +44,14 @@
             width: 120px;
             height: 120px;
             margin: 0 auto 20px;
-            background: #fff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             position: relative;
-        }
-        .nunu-character::after {
-            content: '👶';
-            font-size: 60px;
+            background-image: url('/logo.png');
+            background-size: contain;
         }
         .features {
             display: flex;
@@ -140,14 +138,10 @@
     </style>
 </head>
 <body>
-    <div class="language-switch">
-        <a href="/zh/">中文</a>
-        <a href="/en/">English</a>
-    </div>
     <div class="container">
         <header class="header" style="background: linear-gradient(135deg, #f4faff 0%, #eaf3fb 100%);">
             <div style="display: flex; align-items: center; justify-content: flex-start; max-width: 600px; margin: 0 auto 20px auto;">
-                <div class="nunu-character" style="margin: 0 20px 0 0; background: #fff; border: 3px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);"></div>
+                <div class="nunu-character" style="margin: 0 20px 0 0; border: 3px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);"></div>
                 <div class="bubble" style="margin: 0; font-size: 1.1em; line-height: 1.8; background: #fff; color: #222; border: 1.5px solid #b3d8f7; box-shadow: 0 2px 8px rgba(100,180,255,0.10);">
                     안녕하세요! 저는 nunu예요. 언어 공부를 쉽게 도와드릴게요!
                 </div>
